@@ -13,19 +13,15 @@ content: "";
 clear: both;
 }
 
+.wrapper {
+width: 1366px;
+margin: 0 auto;
+}
+
 .container {
 background: url("../img/background.png") no-repeat;
 background-size: 100%;
 height: 685px;
-}
-
-.container:after {
-display: block;
-content: "";
-height: 855px;
-width: 675px;
-background: url("../img/greenline.png") no-repeat;
-background-position: -145px -262px;
 }
 
 .main-header {
@@ -53,7 +49,7 @@ padding-left: 60px;
 .header-contact {
 float: right;
 font-family: 'Abel', sans-serif;
-width: 110px;
+width: 90px;
 font-size: 18px;
 color: #f9fbe7;
 text-decoration: none;
@@ -101,6 +97,8 @@ color: #ff8a80;
 font-size: 20px;
 font-weight: 200;
 padding-left: 22px;
+margin-top: 30px;
+margin-bottom: 15px;
 }
 
 .info-panel {
@@ -109,6 +107,7 @@ width: 100%;
 }
 
 .info-form {
+position: relative;
 float: right;
 width: 522px;
 height: 360px;
@@ -131,15 +130,14 @@ margin-bottom: 17px;
 margin-right: 7px;
 }
 
-.email {
+.email-form {
 margin-right: 7px;
 }
 
 .box {
 float: left;
 width: 455px;
-height: 100px;
-padding-top: 20px;
+height: 55px;
 }
 
 .info-send {
@@ -155,4 +153,69 @@ border-radius: 5px;
 padding-top: 12px;
 padding-left: 32px;
 padding-bottom: 10px;
+}
+
+.info-form::before {
+position: absolute;
+display: block;
+content: "";
+height: 816px;
+width: 388px;
+background: url("../img/phone.jpg") no-repeat;
+bottom: 63px;
+left: -500px;
+z-index: 2;
+}
+
+.info-form::after {
+position: absolute;
+display: block;
+content: "";
+height: 855px;
+width: 675px;
+background: url("../img/greenline.png") no-repeat;
+bottom: 165px;
+right: 553px;
+z-index: 1;
+}
+
+.desing {
+background: url("../img/drop.png") no-repeat;
+background-position: 200px 20px;
+}
+
+.footer {
+width: 100%;
+min-height: 100px;
+padding: 0;
+margin: 0;
+background-color: #fefcf2;
+}
+
+.copyrate {
+float: left;
+color: #636363;
+padding-top: 25px;
+padding-bottom: 28px;
+padding-left: 200px;
+}
+
+.email {
+position: relative;
+float: right;
+color: #636363;
+padding-top: 25px;
+padding-bottom: 28px;
+padding-right: 430px;
+}
+
+.email::before {
+position: absolute;
+display: block;
+content: "";
+background: url("../img/mail.png") no-repeat;
+height: 35px;
+width: 35px;
+bottom: 40px;
+right: 650px;
 }
