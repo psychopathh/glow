@@ -49,7 +49,7 @@ padding-left: 60px;
 .header-contact {
 float: right;
 font-family: 'Abel', sans-serif;
-width: 90px;
+width: 86px;
 font-size: 18px;
 color: #f9fbe7;
 text-decoration: none;
@@ -194,7 +194,9 @@ background-color: #fefcf2;
 
 .copyrate {
 float: left;
+font-size: 16px;
 color: #636363;
+height: 34px;
 padding-top: 25px;
 padding-bottom: 28px;
 padding-left: 200px;
@@ -203,6 +205,8 @@ padding-left: 200px;
 .email {
 position: relative;
 float: right;
+font-size: 16px;
+height: 34px;
 color: #636363;
 padding-top: 25px;
 padding-bottom: 28px;
@@ -216,6 +220,6 @@ content: "";
 background: url("../img/mail.png") no-repeat;
 height: 35px;
 width: 35px;
-bottom: 40px;
-right: 650px;
+top: 35px;
+right: 630px;
 }
