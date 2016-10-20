@@ -203,23 +203,14 @@ padding-left: 200px;
 }
 
 .email {
-position: relative;
 float: right;
 font-size: 16px;
 height: 34px;
 color: #636363;
 padding-top: 25px;
-padding-bottom: 28px;
+padding-bottom: 25px;
 padding-right: 430px;
-}
-
-.email::before {
-position: absolute;
-display: block;
-content: "";
+padding-left: 40px;
 background: url("../img/mail.png") no-repeat;
-height: 35px;
-width: 35px;
-top: 35px;
-right: 630px;
+background-position: 0px 34px;
 }
